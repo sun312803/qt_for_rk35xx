@@ -1,0 +1,13 @@
+prefix=/home/sun/Download/qt-everywhere-src-5.15.8/install
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Sensors
+Description: Qt Sensors module
+Version: 5.15.8
+Libs: -L${libdir} -lQt5Sensors 
+Cflags: -DQT_SENSORS_LIB -I${includedir}/QtSensors -I${includedir}
+Requires: Qt5Core
+
